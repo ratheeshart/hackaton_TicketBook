@@ -1,0 +1,342 @@
+*{
+	outline: none !important;
+}
+
+/*common css starts*/
+	body{		
+		line-height: 1.25em;
+		
+		font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;	
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+	.main-container{
+		max-width: 640px;
+		margin: 0 auto;
+		overflow: hidden;
+		background: rgba(255,153,0,0.10);	
+	}
+	.main-container > * {
+	    float: left;
+	    width: 100%;
+	    
+	    position: relative;
+	}
+	.cont-holder{
+		padding: 0.625em 1.563em;
+	}
+	.white-bg{
+		background: #fff;
+	}
+	.orange-bg{
+		background-color: #f90;		
+	}
+	.grey-bg{
+		background: #eee;
+	}
+	.dark-grey-bg{
+		background: #7b858e;
+	}
+	.top-space{
+		margin-top: 10px;
+	}
+	.upme{
+		position: absolute;		
+	}
+	.light-red{
+		background:#ff3d55;
+		color: #fff;		
+	}	
+	.dark-orange{
+		background:rgb(216,83,40);		
+	}
+	button.light-red:hover,
+	button.light-red:focus,
+	button.light-red:active{
+		border-color:#ff3d55;
+		background: #fff;
+		color: #ff3d55;
+		transition:all 0.5s; 
+	}	
+	.cont-holder{
+		float: left;
+		width: 100%;
+	}
+	.htl-search input[type="search"]{
+		text-indent: 5px;
+		text-overflow:ellipsis;
+		overflow: hidden;
+		border:1px solid #f90;
+		box-shadow: none;
+		color: #f90;
+		background: transparent; 
+		transition:color 0.5s;
+		padding:10px 0; 
+	}
+	h1,h2,h3,h4,h5,h6{
+		font-weight: bold;
+	}
+	h1{
+		margin: 0;
+		font-size: 2.125em
+		line-height:2.563em;
+	}
+	h2{
+		color: #2d3949;
+		font-size:1.75em;
+		line-height: 1.05em;
+	}
+/*common css ends*/
+/*htl-header-starts*/
+	.logo-mobile{
+	    margin-left: 20%;
+	    width: 70px;
+	}
+	.htl-search{
+	 	background: #fff;
+	    bottom: -44px;
+	    display: none;
+	    padding: 10px;
+	    position: absolute;
+	    z-index: 6;
+	}
+	.navbar-toggle{
+		margin-right: 0;
+	}
+	.navbar-toggle .icon-bar{
+		background: #f90;
+	}
+	.glyphicon-search{
+		color: #f90;
+    	font-size: 1.25em;
+    	margin-top: 18px;
+    	cursor: pointer;
+	}
+	.navbar{
+		margin: 0;
+	}
+	.navbar-nav > li > a{
+		color: #fff;
+		position: relative;		
+	}
+	
+	.navbar-nav > li > a:hover,
+	.navbar-nav > li > a:focus,
+	.navbar-nav > li > a:active,
+	.navbar-nav > li.active > a{
+		background: #fff;
+		color: #f90;		
+	}
+	.top-menu a{
+		color: #fff;
+		font-size: 0.75em;
+	}
+	.top-menu li{
+		position: relative;
+	}
+	.top-menu li:after{
+		content: "/";
+		position: absolute;
+		left: -5px;
+		color: #fff;
+		margin-top: 3px;
+	}
+	.top-menu li:first-child:after{
+		content: none;
+	}
+	.navbar-nav > li.active > a:after{
+		content: "";
+		left:0px;
+		width: 8px;
+		height: 3px;
+		background: #f90;
+		position: absolute;
+		top:50%;
+		transform:translateY(-50%);
+	}
+/*htl-header-ends*/
+/*htl-footer starts*/
+	.copyright{
+		color: #fff;
+		font-size: 0.75em;
+		padding: 5px 15px;
+		text-align: center;
+	}
+	.foot-cont{
+		padding: 10px 0;
+	}
+	.foot-cont-holder a,
+	.foot-cont-holder a:hover,
+	.foot-cont-holder a:active,
+	.foot-cont-holder a:focus{
+	    color: #fff;
+	    position: relative;
+	    text-decoration: none;
+	    padding: 5px 5px 5px 25px;	    
+	}
+	.foot-cont-holder a:after{
+		content:"\e103";
+		display: inline-block;
+	    font-family: "Glyphicons Halflings";
+	    font-style: normal;
+	    font-weight: 400;
+	    line-height: 1;
+	    position: relative;
+	    top: 7px;
+	    position: absolute;
+	    left: 2px;
+	}
+	.foot-cont-holder a.active{
+		text-decoration: underline;
+	}
+/*htl-footer-ends*/
+/*htl-main-cont starts*/
+.login-form{
+	border:1px solid #eee;
+    box-shadow: 1px 1px 3px #ccc;
+    padding-bottom: 20px;
+}
+.login-form h2{
+	margin: 0;
+	padding: 20px;
+	color: #fff;
+}
+.login-form label{
+	float: left;
+	width: 100%;
+}
+.login-form .form-group{
+	margin-bottom: 20px;
+	float: left;
+	width: 100%;	
+}
+.login-form form{
+	padding: 20px;
+}
+.login-form input{
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	float: left;
+	border: 1px solid #ccc;
+	text-indent: 5px;
+	min-height: 25px;
+}	
+.login-form button{
+	margin:0 auto;
+	display: table;
+	}
+/*htl-main-cont ends*/
+@media (min-width:768px){
+	/*common css starts*/
+		body{
+			font-size:9px;		
+		}
+		.main-container{
+			max-width: 1250px;
+		}		
+	/*common css ends*/
+	/*htl-header-starts*/	
+		.logo-cont {
+			padding-left: 30px;
+		}						
+		.htl-search{
+			padding: 10px 0;
+			display: block;			
+			position: relative;
+			bottom: auto;
+		}
+		ul.main-menu{
+			margin: auto;
+			display: table;
+			float: none;
+			position: relative;	
+			padding: 5px;		
+		}
+		ul.main-menu li{
+			display: table-cell;
+			border-top: 2px solid transparent;
+			border-bottom: 2px solid transparent;
+		}
+		ul.main-menu > li.active {
+			border-top-color: #f90;
+			border-bottom-color: #f90;
+		}		
+		.navbar-nav > li > a::after {
+		    background: transparent;
+		    bottom: 10px;
+		    content: "";
+		    height: 3px;	    
+		    position: absolute;	    
+		    width: 0px;	    
+		    transition:width 0.75s;
+		}
+		.navbar-nav > li > a:hover:after,
+		.navbar-nav > li.active > a:after{
+			background: #f90;
+			transition:width 0.75s;
+			right: 0;
+			left:0;		
+			width: 80%;
+			margin: auto;
+
+		}	
+		.navbar-nav > li.active > a:after{
+			top:auto;
+			transform:none;
+		}		
+	/*htl-header-ends*/
+	/*Main-section starts*/
+		.main-cont{
+			min-height: 500px;
+			
+		}
+		.login-form{
+			top: 50%;
+		    transform: translateY(-50%);
+		    position: absolute;
+		    margin: 0 auto;
+		    left: 0;
+		    right: 0;
+		    display: table;
+		    width: 500px;
+		    border:1px solid #eee;
+		    box-shadow: 0px 3px 3px #ccc;
+		}
+		.login-form input{
+			max-width: 80%;
+			padding: 5px;
+		}
+	/*Main-section starts*/
+}
+@media (min-width:992px){
+	body{
+		font-size:12px;		
+	}
+}
+@media (min-width:1025px){
+	body{
+		font-size:16px;		
+	}	
+	ul.main-menu{
+		padding: 0 48px;
+	}
+	ul.main-menu::after,
+	ul.main-menu::before{
+	     background: #f90;
+	    content: "";
+	    height: 54px;
+	    left: -27px;
+	    position: absolute;
+	    transform: skewX(-41deg);
+	    width: 54px;
+	    z-index: 0;
+	}
+	ul.main-menu::before{
+		left: auto;
+		right: -28px;
+		transform: skewX(41deg);
+	}
+}
